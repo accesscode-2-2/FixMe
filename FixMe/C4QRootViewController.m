@@ -21,10 +21,6 @@
     
     
 }
-- (IBAction)buttonTapped:(UIButton *)sender {
-    NSLog(@"tapped");
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
