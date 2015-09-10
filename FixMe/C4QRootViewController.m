@@ -27,11 +27,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)pushButtonTapped:(UIButton *)sender {
-    C4QListTableViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ListViewControllerIdentifier"];
-    [self.navigationController pushViewController:viewController animated:YES];
-}
-
 /*
 #pragma mark - Navigation
 
