@@ -10,7 +10,7 @@
 
 @interface C4QListTableViewController ()
 
-@property (nonatomic) NSArray *items;
+@property (nonatomic) NSMutableArray *items;
 
 @end
 
@@ -19,12 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.items = @[
-       @{@"name" : @"code", @"imageName" : @"Code"},
-       @{@"name" : @"iOS", @"imageName" : @"ios"},
-       @{@"name" : @"Access Code", @"imageName" : @"access_code"},
-       @{@"name" : @"C4Q", @"imageName" : @"cforq"}
-    ];
+    [self.items addObject:@{@"name" : @"code", @"imageName" : @"Code"}];
+    [self.items addObject:@{@"name" : @"iOS", @"imageName" : @"ios"}];
+    [self.items addObject:@{@"name" : @"Access Code", @"imageName" : @"access_code"}];
+    [self.items addObject:@{@"name" : @"C4Q", @"imageName" : @"cforq"}];
 }
 
 
